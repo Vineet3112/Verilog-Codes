@@ -3,7 +3,7 @@ module MUX_4_1_tb();
 reg d0,d1,d2,d3,s0,s1;
 wire y;
 
-MUX_4_1 DUT(s0,s1,d0,d1,d2,d3,y);
+MUX4_1 DUT(.a(d0),.b(d1),.c(d2),.d(d3),.s0(s0),.s1(s1),.y(y));
 
 task inputs(input [0:1]s, [0:3]d);
    begin
